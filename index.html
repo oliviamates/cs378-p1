@@ -11,13 +11,14 @@
         width: 250px;
         height: 250px;
         margin: 25px;
+        margin-left: 0px;
         display: inline-block;
       }
       .centered {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 20%;
+        width: 35%;
       }
       #headline {
         color: pink;
@@ -25,19 +26,32 @@
         font-family: cursive;
         margin-left: auto;
         margin-right: auto;
-        width: 28%;
+        width: 53%;
+        margin-bottom: 5%;
       }
       #title {
         display: block;
         font-family: monospace;
         margin-left: auto;
         margin-right: auto;
-        width: 33%;
+        width: 70%;
         margin-bottom: 10%;
 
       }
-      
-      
+
+      button {
+        border-radius: 20px;
+        background-color: pink;
+        display: inline-block;
+        width: 70px;
+        height: 40px;
+       
+
+      }
+      .col-sm-6 {
+        margin-top: 50px;
+      }
+
     </style>
     <title> Olivia's Menu</title>
   </head>
@@ -49,43 +63,71 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs">
+    <div class="col-sm">
       <img class="food" src="cookies.jpeg" alt="A stack of chocolate chip cookies"/> 
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-6">
       <h2> Chocolate Chip Cookies </h2>
-      <p> A delicious stack of 5 homemade chocolate chip cookies</p>
-      <p>$7.00</p>
+      <h5> A delicious stack of 5 homemade chocolate chip cookies</h5>
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          <h3 class = "price">$7.00</h3>
+        </div>
+        <div class="col-4 col-sm-6">
+          <button type="button">Add!</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs">
+    <div class="col-sm">
       <img class="food" src="cupcakes.webp" alt="A chocolate cupcake with chocolate frosting"/>
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-6">
       <h2>Chocolate Cupcake</h2>
-      <p>One delicious cupcake with chocolate cake and chocolate buttercream frosting</p>
-      <p>$3.00</p>
+      <h5>One delicious cupcake with chocolate cake and chocolate buttercream frosting</h5>
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          <h3 class = "price">$3.00</h3>
+        </div>
+        <div class="col-4 col-sm-6">
+          <button type="button">Add!</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs">
+    <div class="col-sm">
       <img class="food" src="donuts.webp" alt="A stack of cinnamon and chocolate donuts"/>
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-6">
       <h2>Frosted Donuts</h2>
-      <p>Homemade donuts in your choice of cinnamon or chocolate frosting</p>
-      <p>$1.25</p>
+      <h5>Homemade donuts in your choice of cinnamon or chocolate frosting</h5>
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          <h3 class = "price">$1.25</h3>
+        </div>
+        <div class="col-4 col-sm-6">
+          <button type="button">Add!</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs">
+    <div class="col-sm">
       <img class = "food" src="icecream.jpg" alt="Bowl of chocolate ice cream"/>
     </div>
-    <div class="col-xs-6">
+    <div class="col-sm-6">
       <h2>Chocolate Ice Cream</h2>
-      <p>3 scoops of chocolate ice cream served in a glass bowl</p>
-      <p>$5.00</p>
+      <h5>3 scoops of chocolate ice cream served in a glass bowl</h5>
+      <div class="row">
+        <div class="col-8 col-sm-6">
+          <h3 class = "price">$5.00</h3>
+        </div>
+        <div class="col-4 col-sm-6">
+          <button type="button">Add!</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -95,3 +137,4 @@
 
 
 </html>
+
